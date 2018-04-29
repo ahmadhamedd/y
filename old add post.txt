@@ -1,0 +1,44 @@
+
+
+
+{!! Form::open()!!}
+       <div class="form-group">
+           <label>????? ???????</label>
+           <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+               <label for="name" class="col-md-4 control-label">Name</label>
+
+               <div class="col-md-6">
+                   <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
+
+               </div>
+           </div>
+           {{Form::text('title',null,['class'=>'form-control'])}}
+       </div>
+       <div class="form-group">
+           <label> ?????? ???????</label>
+           {{Form::text('title',null,['class'=>'form-control'])}}
+       </div>
+
+       <div class="form-group">
+           <label>?????</label>
+           {{Form::text('title',null,['class'=>'form-control'])}}
+       </div>
+
+       <div class="form-group">
+           <label>?????</label>
+           {{Form::text('title',null,['class'=>'form-control'])}}
+       </div>
+
+<div class="form-group">
+    <label>?????</label>
+    {{Form::text('title',null,['class'=>'form-control'])}}
+</div>
+
+<div class="form-group">
+    <label>?????</label>
+    {{Form::text('title',null,['class'=>'form-control'])}}
+</div>
+    <button type="submit"class="btn btn-primary">Add</button>
+   {{Form::class()}}
+
+@endsection
